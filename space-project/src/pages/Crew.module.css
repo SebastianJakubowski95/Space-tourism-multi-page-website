@@ -1,0 +1,131 @@
+.crew-section {
+  justify-content: space-between;
+  display: flex;
+  padding-top: 50px;
+  height: 700px;
+}
+
+.info {
+  position: relative;
+  left: 12.81%;
+  right: 39.48%;
+  max-width: min-content;
+  min-width: 615px;
+  margin-bottom: 75px;
+}
+
+.crewImg {
+  position: absolute;
+  left: 55%;
+  right: 6.5%;
+  bottom: -14%;
+}
+
+.navigation {
+  display: inline-flex;
+  flex-direction: row;
+  gap: 30px;
+  position: absolute;
+  bottom: 100px;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  background-color: #36373f;
+  border-radius: 50%;
+  border: none;
+}
+
+.circle:not(.active):hover {
+  background-color: #85868b;
+}
+
+.active {
+  background-color: white;
+}
+
+@media screen and (max-width: 1280px) {
+  .crewImg {
+    position: relative;
+  }
+
+  .info {
+    position: relative;
+    left: 0%;
+    right: 0%;
+    max-width: min-content;
+    min-width: 620px;
+    height: 525px;
+    display: inline-grid;
+    justify-items: center;
+  }
+
+  .crew-section {
+    justify-content: space-between;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    height: fit-content;
+    align-items: center;
+  }
+
+  .navigation {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 30px;
+    position: absolute;
+    bottom: 50px;
+  }
+
+  .crewImg {
+    position: relative;
+    left: 0%;
+    right: 0%;
+    bottom: -14%;
+  }
+  .headerTablet {
+    position: absolute;
+    left: 5%;
+    top: 150px;
+  }
+  .circle {
+    border: solid 1px rgb(255, 255, 255, 0.5);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .info {
+    position: relative;
+    height: 400px;
+    display: inline-grid;
+    justify-items: center;
+    width: 90%;
+    min-width: 90%;
+    margin-top: 30px;
+  }
+  .p {
+    width: 100%;
+  }
+  .pictureDiv {
+    display: contents;
+  }
+
+  .pictureElement {
+    display: flex;
+    justify-content: center;
+  }
+  .crewImg {
+    max-width: 70%;
+  }
+
+  .hr {
+    display: flex;
+    width: 90%;
+    border-radius: 5px;
+    height: 0.01rem;
+    background: #ffff;
+    opacity: 0.3;
+  }
+}

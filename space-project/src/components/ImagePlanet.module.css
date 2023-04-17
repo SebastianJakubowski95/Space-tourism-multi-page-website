@@ -1,0 +1,46 @@
+.div {
+  justify-content: space-between;
+  align-items: center;
+  display: inline-flex;
+  flex-direction: column;
+  height: 550px;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1280px) {
+  .div {
+    justify-content: space-between;
+    align-items: center;
+    display: inline-flex;
+    flex-direction: column;
+    height: 550px;
+  }
+
+  .picture {
+    position: relative;
+    top: 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .picture {
+    max-width: 100%;
+    margin-bottom: 0px;
+  }
+  .div {
+    width: 85vw;
+    justify-content: space-between;
+    align-items: center;
+    display: inline-flex;
+    flex-direction: column;
+    height: fit-content;
+  }
+}
+
+.moon-webp {
+  background-image: url("../assets/destination/image-moon.webp");
+}
+
+.moon-png {
+  background-image: url("../assets/destination/image-moon.png");
+}

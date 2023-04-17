@@ -1,0 +1,103 @@
+.main {
+  display: inline-flex;
+  position: relative;
+  top: 75px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.container01 {
+  display: inline-flex;
+  flex-direction: column;
+  height: fit-content;
+  margin-left: 35px;
+}
+.container02 {
+  display: inline-flex;
+  position: absolute;
+  left: 11.46%;
+  right: 44.79%;
+  gap: 50px;
+}
+
+.techImg {
+  position: relative;
+  top: 50px;
+  right: 0%;
+}
+
+@media screen and (max-width: 1280px) {
+  .main {
+    display: inline-flex;
+    position: relative;
+    top: 75px;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .container01 {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    height: fit-content;
+    margin-left: 0px;
+  }
+  .container02 {
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    left: 0%;
+    right: 0%;
+    gap: 50px;
+  }
+
+  .techImg {
+    position: relative;
+    top: 50px;
+    width: 101%;
+    right: 0%;
+  }
+
+  .headerDiv {
+    margin-left: 5%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    display: inline-flex;
+    position: relative;
+    top: 50px;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .container01 {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    height: fit-content;
+    margin-left: 0px;
+  }
+  .container02 {
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    left: 0%;
+    right: 0%;
+    gap: 25px;
+  }
+
+  .techImg {
+    position: relative;
+    top: 0px;
+    width: 101%;
+    right: 0%;
+  }
+
+  .headerDiv {
+    display: flex;
+    justify-content: center;
+    margin-left: 0%;
+  }
+}

@@ -1,0 +1,88 @@
+.dotsDiv {
+  gap: 30px;
+  display: inline-grid;
+  align-self: flex-start;
+  top: 150px;
+  position: relative;
+  z-index: 10;
+}
+
+.dot {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: solid 2px rgb(255, 255, 255, 0.5);
+  background-color: var(--primary-color);
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Bellefair", serif;
+  font-size: 2rem;
+}
+.active {
+  background-color: white;
+  color: var(--primary-color);
+}
+
+.dot:not(.active):hover {
+  border: solid 2px rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 1280px) {
+  .dotsDiv {
+    gap: 30px;
+    display: flex;
+    align-self: center;
+    flex-direction: row;
+    top: 150px;
+    position: relative;
+  }
+
+  .dot {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: solid 2px rgb(255, 255, 255, 0.5);
+    background-color: var(--primary-color);
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Bellefair", serif;
+    font-size: 2rem;
+  }
+  .active {
+    background-color: white;
+    color: var(--primary-color);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dotsDiv {
+    gap: 25px;
+    display: flex;
+    align-self: center;
+    flex-direction: row;
+    top: 50px;
+    position: relative;
+  }
+
+  .dot {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: solid 2px rgb(255, 255, 255, 0.5);
+    background-color: var(--primary-color);
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Bellefair", serif;
+    font-size: 1.5rem;
+  }
+  .active {
+    background-color: white;
+    color: var(--primary-color);
+  }
+}

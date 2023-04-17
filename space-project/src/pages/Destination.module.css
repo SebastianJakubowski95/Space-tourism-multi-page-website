@@ -1,0 +1,27 @@
+.destinationSection {
+  justify-content: center;
+  gap: 200px;
+  top: 75px;
+  height: fit-content;
+  margin-bottom: 300px;
+}
+
+@media screen and (max-width: 1280px) {
+  .destinationSection {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    top: 75px;
+    height: fit-content;
+    margin-bottom: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .destinationSection {
+    top: 25px;
+    height: fit-content;
+    margin-bottom: 100px;
+  }
+}

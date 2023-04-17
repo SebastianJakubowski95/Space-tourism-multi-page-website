@@ -1,0 +1,33 @@
+.header {
+  position: relative;
+  top: 10px;
+}
+
+.number {
+  font-weight: 600;
+  font-size: 1.75rem;
+  color: var(--grey-color);
+}
+
+.text {
+  letter-spacing: 0.4rem;
+  color: white;
+}
+
+@media screen and (max-width: 1280px) {
+  .header {
+    position: relative;
+    left: 0%;
+    top: 0%;
+  }
+  .number,
+  .text {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    margin-bottom: 50px;
+  }
+}

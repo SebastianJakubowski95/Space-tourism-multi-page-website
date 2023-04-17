@@ -1,0 +1,10 @@
+.content {
+  overflow-x: hidden;
+  height: 85vh;
+}
+
+@media screen and (max-width: 1280px) {
+  .content {
+    height: 88vh;
+  }
+}

@@ -9,11 +9,14 @@ import Technology from "./pages/Technology";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/Space-tourism-multi-page-website",
     element: <RootLayout />,
     children: [
       { index: true, element: <Home /> },
-      { path: "destination", element: <Destination /> },
+      {
+        path: "destination",
+        element: <Destination />,
+      },
       { path: "crew", element: <Crew /> },
       { path: "technology", element: <Technology /> },
     ],

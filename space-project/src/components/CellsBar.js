@@ -5,18 +5,23 @@ export default function CellsBar() {
   return (
     <div className={classes.div}>
       <nav className={classes.items}>
-        <Cell number="00" text="HOME" to={"/"} type="mainNavigation" />
+        <Cell
+          number="00"
+          text="HOME"
+          to={"/Space-tourism-multi-page-website"}
+          type="mainNavigation"
+        />
         <Cell
           number="01"
           text="DESTINATION"
-          to={"/destination"}
+          to={"destination"}
           type="mainNavigation"
         />
-        <Cell number="02" text="CREW" to={"/crew"} type="mainNavigation" />
+        <Cell number="02" text="CREW" to={"crew"} type="mainNavigation" />
         <Cell
           number="03"
           text="TECHNOLOGY"
-          to={"/technology"}
+          to={"technology"}
           type="mainNavigation"
         />
       </nav>

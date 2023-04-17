@@ -11,7 +11,7 @@ export default function ButtonHome() {
       animate={animations.exploreBtn.animate}
       transition={animations.exploreBtn.transition}
       className={classes.btn}>
-      <NavLink to={"/destination"} end className={classes.link}>
+      <NavLink to={"destination"} end className={classes.link}>
         <h4 style={{ height: "fit-content" }}>EXPLORE</h4>
       </NavLink>
     </motion.div>
